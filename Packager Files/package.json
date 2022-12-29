@@ -1,0 +1,30 @@
+
+//This will also get created automatticly, but it's not correct. Please copy this and paste it over the previous code in the package.json file :)
+
+{
+    "name": "nodejs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@discordjs/builders": "^1.4.0",
+      "@discordjs/rest": "^1.5.0",
+      "@types/node": "^18.0.6",
+      "discord-api-types": "^0.37.24",
+      "discord.js": "^13.12.0",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "node-fetch": "^3.2.6"
+    },
+    "devDependencies": {
+      "node": "^16.18.1"
+    },
+    "description": ""
+  }
+  
