@@ -10,7 +10,7 @@ app.listen(3000, () => {
 app.get("/", (req, res) => {
   res.send("Hello world!");
 })
-
+//Slash commands
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ['GUILDS', 'GUILD_MESSAGES']});
 const fs = require("fs");
@@ -32,7 +32,7 @@ if(message.content.startsWith(prefix)) {
   command.run(client, message, args)
 }  
 }) 
-
+//Status
 client.on("ready", () => {
 client.user.setActivity('Minecraft', { type: 'PLAYING'})
 })
@@ -42,14 +42,14 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`); // Log a message when the bot is ready
 
   // Announce that the bot is online
-  client.channels.cache.get('1056977087799505067').send(`I'm online!`);
+  client.channels.cache.get('Channel_ID_Here').send(`I'm online!`);
 });
 
 client.on('disconnect', () => {
   // Announce that the bot is offline
-  client.channels.cache.get('1056977087799505067').send(`I'm offline :(`);
+  client.channels.cache.get('Channel_ID_Here').send(`I'm offline :(`);
 });
-
+//reply's
 client.on("messageCreate", message => {
   if(message.content.toLowerCase() === "boob") {
     message.channel.send("it's boop!")
@@ -224,7 +224,7 @@ client.on("messageCreate", message => {
       }
 
       if(message.content === "RGIPH1678yugUHLF1fuh64ZFHR"){
-      if(message.author.id === "704418487451385877"){
+      if(message.author.id === "User_ID_Here"){
       message.reply("Working ✅")
       }else{
       return; //will return with nothing
